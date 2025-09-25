@@ -3,16 +3,17 @@ const http = require("http");
 const url = require("url");
 
 const HOST_HEADER = "cck.toolpe.com";
-const RESPONSE = "expired=false&date=lifetime&devices=100&yandex=active&myOption=";
+const RESPONSE =
+  "expired=false&date=lifetime&devices=100&yandex=active&myOption=";
+const code = "SR-E3B77C6E54D49646E32E725088807C5C";
 
 http
   .createServer((req, res) => {
-    const { pathname, query } = url.parse(req.url, true);
+    const { query } = url.parse(req.url, true);
 
     if (
       (req.headers.host || "").toLowerCase() === HOST_HEADER &&
-      pathname === "/check-key.php" &&
-      query.type === "CCK"
+      query.key === code
     ) {
       res.writeHead(200, {
         "Content-Type": "text/plain; charset=utf-8",
