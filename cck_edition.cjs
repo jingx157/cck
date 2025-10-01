@@ -5,7 +5,7 @@ const url = require("url");
 const HOST_HEADER = "cck.toolpe.com";
 const RESPONSE =
   "expired=false&date=lifetime&devices=100&yandex=active&myOption=";
-const code = "SR-E3B77C6E54D49646E32E725088807C5C";
+const code = "SR-B81FB8E214B42BC11329C6F6C7D41E6E";
 
 http
   .createServer((req, res) => {
