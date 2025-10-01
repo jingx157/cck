@@ -1,5 +1,5 @@
 #define MyAppName "CCK Blocker"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "2.0.0"
 #define MyAppPublisher "Google"
 #define MyAppExeName "CCKBlockerService.exe"
 #define MyServiceName "CCKBlockerService"
