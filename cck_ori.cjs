@@ -3,7 +3,7 @@ const http = require("http");
 const url = require("url");
 // http://cachuake.com/Api/services.ashx
 const HOST_HEADER = "cachuake.com";
-const RESPONSE = "lh+nbIWfeoO7wEtBplUDyMGwDJ6vFWEXgvpCDsOcYPyboWXIIt/WdyrNNdN+MHRC1JxcEzykrxqqCoBstwEllpWF/mcm8LgYQcCpuIgueOVW+mAuJ7YuLnIIW0I57o28jYmEjauTstxabkIrmCm/uGTGxNopBy8lKJ/jhlwa2lDYz6WPRRiOdpZoxmIpt1AVQxrJeZcnPPAW7W6gEPS6DCnghSZMXRpwzcexsPo5w";
+const RESPONSE = "kWSljtFEE8I644RqZf1De6xuf4cgQc+/AR1xRKtb88liBwv+dbNZ1FE+ul326Hh8b82jIQiHI+j7cQsFdrTQO8FBBFECyLanU5dDI6VJelbrCSOMni75PTZvE3RE7aAQacOdkfpYW3gK13NHJxizO3TafZ+gCWuKsbLSMroRf/Oec7qE0NPrsf48wXYZnq9j/Yywh7ClGVlfqEFl2t4h6GPnloqV6kcGqZnOvPNDO";
 
 http
   .createServer((req, res) => {
@@ -17,6 +17,7 @@ http
         "Content-Type": "text/plain; charset=utf-8",
         "Cache-Control": "no-store",
       });
+      console.log("req====>")
       res.end(RESPONSE);
     } else {
       res.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
